@@ -1,9 +1,9 @@
 # WhatsApp Vulnerability
 
-Testing a WhatsApp vulnerability sending .pyz files to execute on open. This little exercise was inspired by [John Hammond](https://www.youtube.com/watch?v=xG2TJjeEbjE)
+Testing a WhatsApp vulnerability sending .pyz files to execute on open. This little exercise was inspired by [John Hammond](https://www.youtube.com/watch?v=xG2TJjeEbjE). Checkout my video demonstration at [./video-demonstration](./video-demonstration.mp4) (needs to be downloaded to watch).
 
-<video width="640" height="480" controls>
-  <source src="Recording 2024-07-30 222632.mp4" type="video/mp4">
+<video width="1834" height="904" controls>
+  <source src="./video-demonstration.mp4" type="video/mp4">
   (Video tag not supported)
 </video>
 

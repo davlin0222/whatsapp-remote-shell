@@ -1,0 +1,19 @@
+import socket
+
+def client(server_ip, server_port):
+    while True:
+        command = input("Enter command to execute (or 'exit' to quit): ")
+        if command.lower() == 'exit':
+            break
+
+        client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        client_socket.connect((server_ip, server_port))
+        client_socket.send(command.encode('utf-8'))
+        output = client_socket.recv(4096).decode('utf-8')
+        print(output)
+        client_socket.close()
+
+if __name__ == "__main__":
+    server_ip = '172.20.96.1'  # Replace with the server's IP address
+    server_port = 9999
+    client(server_ip, server_port)
